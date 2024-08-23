@@ -17,6 +17,12 @@ module.exports = {
       }
     },
     extend: {
+      colors: {
+        foreground: 'var(--foreground)',
+        background: 'var(--background)',
+        accent: 'var(--accent)',
+        secondary: 'var(--secondary)'
+      },
       fontFamily: {
         sans: ['var(--font-sans)', ...fontFamily.sans]
       },
@@ -36,5 +42,5 @@ module.exports = {
       }
     }
   },
-  plugins: [require('tailwindcss-animate')]
+  plugins: []
 };

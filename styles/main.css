@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  @import './themes/light.css';
+}
+
 *,
 *:before,
 *:after {
@@ -9,7 +13,7 @@
 }
 
 *:focus:not(ol) {
-  @apply outline-none ring-2 ring-pink-500 ring-opacity-50;
+  @apply outline-none ring-1 ring-accent ring-opacity-50;
 }
 
 html {
@@ -20,6 +24,7 @@ html {
     'case' 1,
     'rlig' 1,
     'calt' 0;
+  @apply scroll-pt-20 scroll-smooth;
 }
 
 html,
@@ -28,7 +33,7 @@ body {
     'Helvetica', sans-serif;
   text-rendering: optimizeLegibility;
   -moz-osx-font-smoothing: grayscale;
-  @apply text-white bg-zinc-800 antialiased;
+  @apply text-foreground bg-background antialiased max-w-6xl mx-auto;
 }
 
 body {
@@ -56,4 +61,8 @@ p a {
 
 .height-screen-helper {
   min-height: calc(100vh - 80px);
+}
+
+li {
+  list-style: initial;
 }
