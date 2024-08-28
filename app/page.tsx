@@ -13,13 +13,17 @@ import Hero from '@/components/ui/Hero';
 import Features from '@/components/ui/Features';
 import Demo from '@/components/ui/Demo';
 
+import { showPricing } from '@/app/flags';
+
 export default async function MainPage() {
-  const supabase = createClient();
-  const [products] = await Promise.all([
-    // getUser(supabase),
-    getProducts(supabase)
-    // getSubscription(supabase)
-  ]);
+  // const supabase = createClient();
+  // const [users, products, subscriptions] = await Promise.all([
+  //   getUser(supabase),
+  //   getProducts(supabase),
+  //   getSubscription(supabase)
+  // ]);
+
+  const flag = await showPricing();
 
   return (
     <>
@@ -41,13 +45,11 @@ export default async function MainPage() {
             <Demo />
           </Suspense>
         </BlurFade>
-        <BlurFade delay={0.15 * 5}>
-          <Pricing
-            user={undefined}
-            products={products ?? []}
-            subscription={null}
-          />
-        </BlurFade>
+        {flag && (
+          <BlurFade delay={0.15 * 5}>
+            <Pricing user={undefined} products={[]} subscription={null} />
+          </BlurFade>
+        )}
       </Container>
     </>
   );
