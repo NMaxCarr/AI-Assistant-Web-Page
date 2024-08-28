@@ -15,7 +15,7 @@ export default async function Navbar() {
       <a href="#skip" className="sr-only focus:not-sr-only">
         Skip to content
       </a>
-      <BlurFade delay={0.25} inView>
+      <BlurFade delay={0.15}>
         <Navlinks />
       </BlurFade>
     </nav>

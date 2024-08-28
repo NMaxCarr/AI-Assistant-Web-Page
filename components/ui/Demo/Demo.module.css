@@ -1,0 +1,7 @@
+.title {
+  @apply w-fit mx-auto text-2xl font-bold tracking-tighter sm:text-4xl xl:text-5xl/none;
+}
+
+.video {
+  @apply my-10 w-[560px] h-[315px];
+}
