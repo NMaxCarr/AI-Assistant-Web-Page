@@ -18,14 +18,14 @@ export default async function Navlinks({ user }: NavlinksProps) {
         </Link>
       </div>
       <nav className="flex flex-row gap-5 justify-center">
-        <Link href="#features" className={s.link}>
+        <Link href="/#features" className={s.link}>
           Features
         </Link>
-        <Link href="#demo" className={s.link}>
+        <Link href="/#demo" className={s.link}>
           Tour
         </Link>
         {flag && (
-          <Link href="#pricing" className={s.link}>
+          <Link href="/#pricing" className={s.link}>
             Pricing
           </Link>
         )}

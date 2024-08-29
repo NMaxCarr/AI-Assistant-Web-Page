@@ -1,0 +1,4 @@
+# Allow all crawlers, indexing root only
+User-agent: *
+Allow: /$
+Disallow: /
