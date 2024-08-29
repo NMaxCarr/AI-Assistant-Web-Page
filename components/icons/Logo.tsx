@@ -1,5 +1,11 @@
-const Logo = ({ ...props }) => (
-  <span className="font-bold text-xl whitespace-nowrap" {...props}>
+import { cn } from '@/utils/cn';
+
+type LogoProps = {
+  classNames?: string;
+};
+
+const Logo = ({ classNames }: LogoProps) => (
+  <span className={cn('font-bold whitespace-nowrap', { classNames })}>
     HumanLovesAI ❤️
   </span>
 );

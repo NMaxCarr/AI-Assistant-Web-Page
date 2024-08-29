@@ -11,5 +11,5 @@
 }
 
 .logo {
-  @apply p-1 outline-none ring-0 ring-transparent ring-opacity-0 cursor-pointer rounded-full transform duration-100 ease-in-out !important;
+  @apply p-1 sm:mx-6 md:text-xl outline-none ring-0 ring-transparent ring-opacity-0 cursor-pointer rounded-full transform duration-100 ease-in-out !important;
 }

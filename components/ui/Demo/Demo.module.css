@@ -3,5 +3,5 @@
 }
 
 .video {
-  @apply my-10 w-[560px] h-[315px];
+  @apply my-10 md:w-[560px] md:h-[315px] w-[420px] h-[235px];
 }

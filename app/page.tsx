@@ -1,12 +1,6 @@
 import { Suspense } from 'react';
 
 import Pricing from '@/components/ui/Pricing/Pricing';
-import { createClient } from '@/utils/supabase/server';
-import {
-  getProducts,
-  getSubscription,
-  getUser
-} from '@/utils/supabase/queries';
 import BlurFade from '@/components/animations/blur-fade';
 import Container from '@/components/ui/container';
 import Hero from '@/components/ui/Hero';
@@ -16,23 +10,12 @@ import Demo from '@/components/ui/Demo';
 import { showPricing } from '@/app/flags';
 
 export default async function MainPage() {
-  // const supabase = createClient();
-  // const [users, products, subscriptions] = await Promise.all([
-  //   getUser(supabase),
-  //   getProducts(supabase),
-  //   getSubscription(supabase)
-  // ]);
-
   const flag = await showPricing();
 
   return (
     <>
       <Container className="h-[calc(80dvh-4rem)] md:h[calc(80dvh-5rem)]">
-        <BlurFade
-          className="flex flex-col w-full h-full"
-          delay={0.15 * 2}
-          inView
-        >
+        <BlurFade className="flex flex-col w-full h-full" delay={0.15 * 2}>
           <Hero className="m-auto" />
         </BlurFade>
       </Container>
