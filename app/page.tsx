@@ -9,7 +9,7 @@ import Demo from '@/components/ui/Demo';
 export default async function MainPage() {
   return (
     <>
-      <Container className="h-[calc(80dvh-4rem)] md:h[calc(80dvh-5rem)]">
+      <Container className="h-[calc(50dvh)]">
         <BlurFade className="flex flex-col w-full h-full" delay={0.15 * 2}>
           <Hero className="m-auto" />
         </BlurFade>

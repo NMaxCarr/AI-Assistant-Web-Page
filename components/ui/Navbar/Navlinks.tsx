@@ -3,6 +3,8 @@ import Logo from '@/components/icons/Logo';
 import s from './Navbar.module.css';
 
 import { showPricing } from '@/app/flags';
+import GitHub from '@/components/icons/GitHub';
+import Image from 'next/image';
 
 interface NavlinksProps {
   user?: any;
@@ -31,6 +33,25 @@ export default async function Navlinks({ user }: NavlinksProps) {
         )}
       </nav>
       <nav className="flex flex-row mx-6 justify-end">
+        <a
+          aria-label="Github Repository"
+          href="https://github.com/samuelint/ai-assistant"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <img
+            className="h-6 mx-2"
+            alt="GitHub Repo stars"
+            src="https://img.shields.io/github/stars/samuelint/ai-assistant"
+          />
+        </a>
+        <a
+          className="text-black"
+          aria-label="Github Repository"
+          href="https://github.com/samuelint/ai-assistant"
+        >
+          <GitHub />
+        </a>
         {user && (
           <Link href="/account" className={s.link}>
             Account

@@ -10,16 +10,7 @@ export default function Footer() {
             reserved.
           </span>
         </div>
-        <div className="flex items-center space-x-6">
-          <span> by Samuel Richard Magny</span>
-          <a
-            className="text-black"
-            aria-label="Github Repository"
-            href="https://github.com/samuelint/ai-assistant"
-          >
-            <GitHub />
-          </a>
-        </div>
+        <div className="flex items-center space-x-6"></div>
       </div>
     </footer>
   );
