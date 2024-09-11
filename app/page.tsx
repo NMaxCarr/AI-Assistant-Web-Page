@@ -5,7 +5,7 @@ import Container from '@/components/ui/container';
 import Hero from '@/components/ui/Hero';
 import Features from '@/components/ui/Features';
 import Demo from '@/components/ui/Demo';
-import Dowload from '@/components/ui/Dowload/Dowload';
+import Download from '@/components/ui/Download';
 
 export default async function MainPage() {
   return (
@@ -15,7 +15,7 @@ export default async function MainPage() {
           <Hero />
         </BlurFade>
         <BlurFade className="mx-auto" delay={0.15 * 3}>
-          <Dowload />
+          <Download />
         </BlurFade>
       </Container>
       <Container className="flex flex-col items-center gap-10">

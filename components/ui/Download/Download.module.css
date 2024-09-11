@@ -5,7 +5,3 @@
 .section {
   @apply inline-flex items-center rounded-xl overflow-hidden bg-gray-900 text-white;
 }
-
-.items {
-  @apply p-2 font-medium flex items-center gap-1 hover:bg-gray-700/50 transition;
-}

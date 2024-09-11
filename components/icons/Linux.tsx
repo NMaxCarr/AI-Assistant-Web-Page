@@ -1,8 +1,14 @@
-import React from 'react';
+type LinuxLogoProps = {
+  className?: string;
+};
 
-const LinuxLogo = () => {
+const LinuxLogo = ({ className }: LinuxLogoProps) => {
   return (
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+    <svg
+      className={className}
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 48 48"
+    >
       <title>linux</title>
       <g>
         <path
