@@ -20,6 +20,9 @@ export default async function Navlinks({ user }: NavlinksProps) {
         </Link>
       </div>
       <nav className="flex flex-row gap-5 justify-center">
+        <Link href="/#download" className={s.link}>
+          Download
+        </Link>
         <Link href="/#features" className={s.link}>
           Features
         </Link>

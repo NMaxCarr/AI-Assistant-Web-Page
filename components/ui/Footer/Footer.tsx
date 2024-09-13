@@ -1,5 +1,3 @@
-import GitHub from '@/components/icons/GitHub';
-
 export default function Footer() {
   return (
     <footer className="mx-auto max-w-[1920px] p-6 ">
