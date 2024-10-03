@@ -1,17 +1,13 @@
-import s from './Hero.module.css';
+import RetroGrid from '../retro-grid';
 
-interface HeroProps {
-  className?: string;
-}
-
-const Hero = ({ className }: HeroProps): React.ReactNode => {
+const Hero = (): React.ReactNode => {
   return (
-    <section id="hero" className={className}>
-      <h2 className={s.title}>AI-Assistant 🤖</h2>
-      <div className={s.description}>
-        A new approach for human to finally love AI and use it for day to day
-        tasks
-      </div>
+    <section id="hero" className="relative flex h-[500px] w-full flex-col items-center justify-center">
+      <span className="pointer-events-none z-10 whitespace-pre-wrap bg-gradient-to-b from-[#004ECF] to-[#081E91] bg-clip-text text-center text-7xl font-bold leading-none tracking-tighter text-transparent">
+        Perfect AI Client for Software Developers
+      </span>
+
+      <RetroGrid />
     </section>
   );
 };

@@ -13,7 +13,7 @@ const DownloadLink = ({ children, href, className }: DownloadLinkProps) => {
       target="_blank"
       rel="noreferrer"
       className={cn(
-        'p-2 font-medium flex items-center gap-1 hover:bg-gray-700/50 transition',
+        'bg-slate-800 hover:bg-slate-700/90 rounded-lg text-white px-8 py-4 font-medium flex items-center gap-1 transition',
         className
       )}
     >

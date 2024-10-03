@@ -1,10 +1,9 @@
 import Link from 'next/link';
-import Logo from '@/components/icons/Logo';
+import AiLikesHumanLogo from '@/components/icons/AiLikesHuman';
 import s from './Navbar.module.css';
 
 import { showPricing } from '@/app/flags';
 import GitHub from '@/components/icons/GitHub';
-import Image from 'next/image';
 
 interface NavlinksProps {
   user?: any;
@@ -16,7 +15,7 @@ export default async function Navlinks({ user }: NavlinksProps) {
     <div className="grid grid-cols-3 py-2 align-center sm:py-6">
       <div className="flex items-center">
         <Link href="/" className={s.logo} aria-label="Logo">
-          <Logo />
+          <AiLikesHumanLogo />
         </Link>
       </div>
       <nav className="flex flex-row gap-5 justify-center">
@@ -25,9 +24,6 @@ export default async function Navlinks({ user }: NavlinksProps) {
         </Link>
         <Link href="/#features" className={s.link}>
           Features
-        </Link>
-        <Link href="/#demo" className={s.link}>
-          Tour
         </Link>
         {flag && (
           <Link href="/#pricing" className={s.link}>

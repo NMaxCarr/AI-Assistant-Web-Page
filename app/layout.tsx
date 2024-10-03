@@ -5,12 +5,13 @@ import { Toaster } from '@/components/ui/Toasts/toaster';
 import { PropsWithChildren, Suspense } from 'react';
 import { getURL } from '@/utils/helpers';
 import 'styles/main.css';
+import { BRAND_NAME } from './configuration';
 
-const title = 'Human Love AI';
+
 
 export const metadata: Metadata = {
   metadataBase: new URL(getURL()),
-  title: title
+  title: BRAND_NAME
 };
 
 export default async function RootLayout({ children }: PropsWithChildren) {
