@@ -7,7 +7,7 @@ import {
   Share1Icon,
   TextIcon,
 } from "@radix-ui/react-icons";
-import { BookOpen, TruckIcon } from 'lucide-react';
+import { BanknoteIcon, BookOpen, TruckIcon } from 'lucide-react';
 import { MultiVendorAnimatedBeam } from './MultiVendorAnimatedBeam';
 
 
@@ -32,7 +32,16 @@ const features = [
     href: "/",
     cta: "Learn more",
     background: <img className="absolute -right-20 -top-20 opacity-60" />,
-    className: "col-span-3 lg:col-span-2",
+    className: "col-span-3 lg:col-span-1",
+  },
+  {
+    Icon: BanknoteIcon,
+    name: "Cheap",
+    description: "Save on AI monthly subscription costs. You only pay for what you use at minimum API price.",
+    href: "/",
+    cta: "Learn more",
+    background: <img className="absolute -right-20 -top-20 opacity-60" />,
+    className: "col-span-3 lg:col-span-1",
   },
   {
     Icon: Share1Icon,
