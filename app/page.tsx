@@ -1,6 +1,7 @@
-import Hero from '@/components/ui/Hero';
-import Features from '@/components/ui/Features';
-import Download from '@/components/ui/Download';
+import Hero from '@/components/hero';
+import Features from '@/components/features';
+import Download from '@/components/download';
+
 
 export default async function MainPage() {
   return (

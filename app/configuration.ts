@@ -1,1 +1,1 @@
-export const BRAND_NAME="AI Likes Human";
+export const BRAND_NAME='AI Likes Human';

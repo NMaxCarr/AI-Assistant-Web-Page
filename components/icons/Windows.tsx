@@ -2,7 +2,7 @@ type WindowsLogoProps = {
   className?: string;
 };
 
-const WindowsLogo = ({ className }: WindowsLogoProps) => {
+export const WindowsLogo = ({ className }: WindowsLogoProps) => {
   return (
     <svg
       className={className}
@@ -16,5 +16,3 @@ const WindowsLogo = ({ className }: WindowsLogoProps) => {
     </svg>
   );
 };
-
-export default WindowsLogo;
