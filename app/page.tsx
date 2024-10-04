@@ -4,7 +4,7 @@ import Download from '@/components/ui/Download';
 
 export default async function MainPage() {
   return (
-    <div className="flex flex-col gap-6">
+    <div className="flex flex-col gap-16">
       <Hero />
       <Download />
       <Features />
