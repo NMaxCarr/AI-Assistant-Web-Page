@@ -1,9 +1,7 @@
-import Link from 'next/link';
-import AiLikesHumanLogo from '@/components/icons/AiLikesHuman';
-import s from './Navbar.module.css';
-
 import { showPricing } from '@/app/flags';
 import GitHub from '@/components/icons/GitHub';
+import Navlink from './Navlink';
+import LogoLink from './LogoLink';
 
 interface NavlinksProps {
   user?: any;
@@ -14,21 +12,19 @@ export default async function Navlinks({ user }: NavlinksProps) {
   return (
     <div className="grid grid-cols-3 py-2 align-center sm:py-6">
       <div className="flex items-center">
-        <Link href="/" className={s.logo} aria-label="Logo">
-          <AiLikesHumanLogo />
-        </Link>
+        <LogoLink href="/" aria-label="Logo"/>
       </div>
       <nav className="flex flex-row gap-5 justify-center">
-        <Link href="/#download" className={s.link}>
+        <Navlink href="/#download">
           Download
-        </Link>
-        <Link href="/#features" className={s.link}>
+        </Navlink>
+        <Navlink href="/#features">
           Features
-        </Link>
+        </Navlink>
         {flag && (
-          <Link href="/#pricing" className={s.link}>
+          <Navlink href="/#pricing">
             Pricing
-          </Link>
+          </Navlink>
         )}
       </nav>
       <nav className="flex flex-row mx-6 justify-end">
@@ -52,9 +48,9 @@ export default async function Navlinks({ user }: NavlinksProps) {
           <GitHub />
         </a>
         {user && (
-          <Link href="/account" className={s.link}>
+          <Navlink href="/account">
             Account
-          </Link>
+          </Navlink>
         )}
       </nav>
     </div>

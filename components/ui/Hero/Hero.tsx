@@ -1,13 +1,14 @@
 import RetroGrid from '../retro-grid';
+import WordRotate from '../word-rotate';
 
 const Hero = (): React.ReactNode => {
   return (
-    <section id="hero" className="relative flex h-[500px] w-full flex-col items-center justify-center">
+    <section id="hero" className="relative flex h-[500px] w-full flex-col items-center justify-center gap-2">
       <span className="pointer-events-none z-10 whitespace-pre-wrap bg-gradient-to-b from-[#004ECF] to-[#081E91] bg-clip-text text-center text-7xl font-bold leading-none tracking-tighter text-transparent">
-        Perfect AI Client for Software Developers
+        AI Client you will love
       </span>
-
-      <RetroGrid />
+      <span className="text-4xl font-bold text-black dark:text-white">Perfect for Software Developers</span>      
+      <RetroGrid className='absolute w-screen' />
     </section>
   );
 };
