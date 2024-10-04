@@ -1,4 +1,3 @@
-import { showPricing } from '@/app/flags';
 import GitHub from '@/components/icons/GitHub';
 import Navlink from './Navlink';
 import LogoLink from './LogoLink';
@@ -8,7 +7,6 @@ interface NavlinksProps {
 }
 
 export default async function Navlinks({ user }: NavlinksProps) {
-  const flag = await showPricing();
   return (
     <div className="grid grid-cols-3 py-2 align-center sm:py-6">
       <div className="flex items-center">
@@ -21,11 +19,6 @@ export default async function Navlinks({ user }: NavlinksProps) {
         <Navlink href="/#features">
           Features
         </Navlink>
-        {flag && (
-          <Navlink href="/#pricing">
-            Pricing
-          </Navlink>
-        )}
       </nav>
       <nav className="flex flex-row mx-6 justify-end">
         <a
