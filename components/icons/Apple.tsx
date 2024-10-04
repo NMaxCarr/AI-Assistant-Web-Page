@@ -2,7 +2,7 @@ type AppleLogoProps = {
   className?: string;
 };
 
-const AppleLogo = ({ className }: AppleLogoProps) => {
+export const AppleLogo = ({ className }: AppleLogoProps) => {
   return (
     <svg
       className={className}
@@ -15,5 +15,3 @@ const AppleLogo = ({ className }: AppleLogoProps) => {
     </svg>
   );
 };
-
-export default AppleLogo;

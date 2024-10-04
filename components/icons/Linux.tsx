@@ -2,7 +2,7 @@ type LinuxLogoProps = {
   className?: string;
 };
 
-const LinuxLogo = ({ className }: LinuxLogoProps) => {
+export const LinuxLogo = ({ className }: LinuxLogoProps) => {
   return (
     <svg
       className={className}
@@ -66,5 +66,3 @@ const LinuxLogo = ({ className }: LinuxLogoProps) => {
     </svg>
   );
 };
-
-export default LinuxLogo;
