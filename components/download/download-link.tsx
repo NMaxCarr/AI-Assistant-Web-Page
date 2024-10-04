@@ -1,5 +1,4 @@
 import { Button } from '../ui/button';
-import Link from 'next/link';
 
 
 type DownloadLinkProps = {
@@ -11,7 +10,8 @@ type DownloadLinkProps = {
 const DownloadLink = ({ children, href, className }: DownloadLinkProps) => {
   return (
     <Button className={className} asChild>
-      <Link href={href}>{children}</Link>
+      {/* Do not use next/link, since it prevent to download the file twice */}
+      <a href={href} download>{children}</a>
     </Button>
   );
 };
